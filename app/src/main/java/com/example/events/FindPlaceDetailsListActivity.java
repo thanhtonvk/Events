@@ -18,5 +18,25 @@ public class FindPlaceDetailsListActivity extends AppCompatActivity {
                 startActivity(new Intent(FindPlaceDetailsListActivity.this, PlaceDetailsActivity.class));
             }
         });
+
+        findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+        findViewById(R.id.btnBookNow1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FindPlaceDetailsListActivity.this, BookingActivity.class));
+            }
+        });
+        findViewById(R.id.btnBookNow2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FindPlaceDetailsListActivity.this, BookingActivity.class));
+            }
+        });
     }
 }

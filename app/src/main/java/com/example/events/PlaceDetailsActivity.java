@@ -20,6 +20,13 @@ public class PlaceDetailsActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
     }
 
 }

@@ -18,5 +18,11 @@ public class BookingActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), ConfirmActivity.class));
             }
         });
+        findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }

@@ -19,5 +19,12 @@ public class FindPlaceActivity extends AppCompatActivity {
                 startActivity(new Intent(FindPlaceActivity.this, FindPlaceDetailsListActivity.class));
             }
         });
+
+        findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }

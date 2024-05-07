@@ -14,6 +14,7 @@
         android:background="@color/primary">
 
         <ImageButton
+            android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#00000000"
@@ -75,6 +76,7 @@
                         android:textSize="16sp" />
 
                     <Button
+                        android:id="@+id/btnBookNow1"
                         android:layout_width="match_parent"
                         android:layout_height="32dp"
                         android:layout_margin="30dp"
@@ -98,6 +100,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/btn_image2"
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
                         android:scaleType="centerCrop"
@@ -122,6 +125,7 @@
                         android:textSize="16sp" />
 
                     <Button
+                        android:id="@+id/btnBookNow2"
                         android:layout_width="match_parent"
                         android:layout_height="32dp"
                         android:layout_margin="30dp"

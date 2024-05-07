@@ -50,6 +50,13 @@ public class EventMangerActivity extends AppCompatActivity {
             }
         });
 
+        dialog.findViewById(R.id.btn_map).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+                startActivity(new Intent(EventMangerActivity.this, MapsActivity.class));
+            }
+        });
 
         dialog.show();
     }

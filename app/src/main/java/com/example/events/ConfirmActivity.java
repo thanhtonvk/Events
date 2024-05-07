@@ -18,5 +18,11 @@ public class ConfirmActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SuccessActivity.class));
             }
         });
+        findViewById(R.id.btnBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
     }
 }

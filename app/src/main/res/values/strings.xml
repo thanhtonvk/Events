@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Events</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_map_api">AIzaSyCvnPTyx6568GW_HQEO6w5jmJWn67hCKP8</string>
 </resources>
