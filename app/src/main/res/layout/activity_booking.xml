@@ -64,10 +64,12 @@
                 android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/edtFullName"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/border_editext" />
+                android:background="@drawable/border_editext"
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -77,10 +79,12 @@
                 android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/border_editext" />
+                android:background="@drawable/border_editext"
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -90,10 +94,29 @@
                 android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/edtPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/border_editext" />
+                android:background="@drawable/border_editext"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Quantity"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:text="0"
+                android:inputType="number"
+                android:id="@+id/edtQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_editext"
+                android:textColor="@color/black" />
         </LinearLayout>
 
 
@@ -127,12 +150,13 @@
                 android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/edtTime"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/border_editext"
                 android:drawableRight="@drawable/clock_black"
-                android:padding="10dp" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -142,12 +166,13 @@
                 android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/edtCalendar"
                 android:layout_width="match_parent"
                 android:layout_height="32dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/border_editext"
                 android:drawableRight="@drawable/calendar_black"
-                android:padding="10dp" />
+                android:textColor="@color/black" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -179,6 +204,7 @@
                     android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/txtCost"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -189,7 +215,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/btn_continue"
+                android:id="@+id/btnContinue"
                 android:layout_width="match_parent"
                 android:layout_height="36sp"
                 android:background="@drawable/border_button"

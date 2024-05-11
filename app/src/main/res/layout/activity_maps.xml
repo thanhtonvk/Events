@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity" >
+    tools:context=".MapsActivity">
 
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <SearchView
         android:id="@+id/mapSearch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:queryHint="Search here...."
-        android:elevation="5dp"
         android:background="@drawable/bg_search_view"
+        android:elevation="5dp"
         android:iconifiedByDefault="false"
-        app:layout_constraintStart_toStartOf="parent"
+        android:queryHint="Search here...."
         app:layout_constraintEnd_toStartOf="@+id/directionButton"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -31,12 +31,11 @@
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
+        android:background="@color/common_google_signin_btn_text_dark"
         android:scaleType="fitCenter"
         android:src="@drawable/direction"
-        android:background="@color/common_google_signin_btn_text_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

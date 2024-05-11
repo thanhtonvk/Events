@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".FindPlaceActivity">
+    tools:context=".AddEventActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -43,63 +43,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Area"
+                android:text="Event name"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/edtArea"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/stroke_editext"
-                android:drawableRight="@drawable/baseline_location_on_24"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Event type"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/edtEventType"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/stroke_editext"
-                android:drawableRight="@drawable/baseline_unfold_more_24"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Quantity"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/edtQuantity"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/stroke_editext"
-                android:textColor="@color/black" />
-
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Convenient"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/edtConvenient"
+                android:id="@+id/edt_event_name"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
@@ -110,28 +59,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Other requirements"
+                android:text="Time"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/edtRequirements"
+                android:id="@+id/edt_time"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/stroke_editext"
-                android:inputType="textMultiLine"
-                android:lineSpacingMultiplier="@integer/material_motion_duration_long_1"
                 android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Image"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edt_image"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/stroke_editext"
+                android:textColor="@color/black" />
+
 
             <Button
-                android:id="@+id/btn_tim"
+                android:id="@+id/btn_add"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border_button"
                 android:backgroundTint="@color/primary"
-                android:text="Find" />
+                android:text="Add event" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

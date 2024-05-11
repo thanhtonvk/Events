@@ -22,6 +22,7 @@
             android:src="@drawable/arrow_back" />
 
         <TextView
+            android:id="@+id/txtTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -64,12 +65,14 @@
         </LinearLayout>
 
         <ImageView
+            android:id="@+id/img"
             android:layout_width="match_parent"
             android:layout_height="375px"
             android:scaleType="center"
             android:src="@drawable/hoinghi" />
 
         <TextView
+            android:id="@+id/txtName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
@@ -101,6 +104,7 @@
             android:src="@drawable/location" />
 
         <TextView
+            android:id="@+id/txtArea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
@@ -116,6 +120,7 @@
             android:src="@drawable/ticket" />
 
         <TextView
+            android:id="@+id/txtCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
@@ -141,6 +146,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/txtDescription1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -149,6 +155,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/txtDescription2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -157,6 +164,7 @@
                 android:textSize="14sp" />
 
             <TextView
+                android:id="@+id/txtDescription3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -168,7 +176,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_book_now"
+            android:id="@+id/btnBook"
             android:layout_width="match_parent"
             android:layout_height="36sp"
             android:layout_marginTop="10dp"

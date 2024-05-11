@@ -73,6 +73,7 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/txtFullName"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -104,6 +105,7 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/txtEmail"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -135,6 +137,7 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/txtPhoneNumber"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -168,6 +171,7 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/txtName"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="15dp"
@@ -192,6 +196,7 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/txtTime"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -223,6 +228,7 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/txtQuantity"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -280,6 +286,7 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/txtCost"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -311,6 +318,8 @@
                             android:textSize="14sp" />
 
                         <EditText
+                            android:id="@+id/edtDiscount"
+                            android:textColor="@color/black"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -339,6 +348,8 @@
                             android:textSize="14sp" />
 
                         <EditText
+                            android:id="@+id/edtPaymentMethod"
+                            android:textColor="@color/black"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -350,7 +361,7 @@
             </androidx.cardview.widget.CardView>
 
             <Button
-                android:id="@+id/btn_pay"
+                android:id="@+id/btnPay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
