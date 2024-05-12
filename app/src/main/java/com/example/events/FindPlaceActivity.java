@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -45,7 +46,13 @@ public class FindPlaceActivity extends AppCompatActivity {
                 findPlace.quantity = edtQuantity.getText().toString();
                 findPlace.convenient = edtConvenient.getText().toString();
                 findPlace.requirements = edtRequirements.getText().toString();
-                startActivity(new Intent(FindPlaceActivity.this, FindPlaceDetailsListActivity.class));
+                if (findPlace.area.isEmpty() || findPlace.eventype.isEmpty() || findPlace.quantity.isEmpty() || findPlace.convenient.isEmpty() || findPlace.requirements.isEmpty()) {
+                    Toast.makeText(FindPlaceActivity.this, "Các trường thông tin không được để trống", Toast.LENGTH_SHORT).show();
+                    return;
+                } else {
+                    startActivity(new Intent(FindPlaceActivity.this, FindPlaceDetailsListActivity.class));
+                }
+
             }
         });
     }
